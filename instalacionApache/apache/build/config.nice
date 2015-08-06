@@ -1,0 +1,20 @@
+#! /bin/sh
+#
+# Created by configure
+
+"./configure" \
+"--prefix=/usr/local/apache" \
+"--enable-lib64" \
+"--libdir=/usr/lib64" \
+"--enable-ssl" \
+"--with-ssl" \
+"--enable-headers" \
+"--enable-rewrite" \
+"--enable-setenvif" \
+"--enable-module=so" \
+"--enable-module=most" \
+"--enable-mods-shared=most" \
+"--disable-authz-default" \
+"--with-mpm=worker" \
+"--with-included-apr" \
+"$@"
